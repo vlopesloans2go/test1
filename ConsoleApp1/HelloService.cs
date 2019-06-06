@@ -4,10 +4,9 @@ namespace ConsoleApp1
 {
     public class HelloService : IHelloService
     {
-        public void SayHello()
+        public string GetSayHelloMsg()
         {
-            Console.Write("Hello !");
-            Console.Read();
+            return "Hello !";
         }
     }
 }

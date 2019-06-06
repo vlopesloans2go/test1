@@ -16,7 +16,9 @@ namespace ConsoleApp1
 
             var serviceInstance = container.Resolve<IHelloService>();
 
-            serviceInstance.SayHello();
+            Console.Write(serviceInstance.GetSayHelloMsg());
+
+            Console.Read();
         }
     }
 }
